@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>登录</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<link rel="stylesheet/less" type="text/css" href="less/public.less" />
+		<link rel="stylesheet/less" type="text/css" href="less/login.less" />
+		<script src="public/less.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="public/layui/css/layui.css" />
+		<script src="public/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="page-header">
+			<div class="header-body">
+				<img src="img/public/logo.png" />
+				<img src="img/public/logo_name.png" />
+				<ul class="menu-list">
+					<li>首页</li>
+					<li>诗文</li>
+					<li>名句</li>
+					<li>作者</li>
+					<li class="active">古籍</li>
+				</ul>
+				<div class="head--search">
+					<input />
+					<button class="head-search-btn">搜索</button>
+				</div>
+				<span class="login-and-register">登录</span>
+				<span class="login-and-register">注册</span>
+			</div>
+		</div>
+		<div class="page-body">
+			<div class="login-wrapper">
+				<form class="layui-form login-form" action="">
+					<div class="layui-form-item">
+						<label class="layui-form-label">手机号/邮箱</label>
+						<div class="layui-input-block">
+							<input type="text" autocomplete="off" class="layui-input">
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">密码</label>
+						<div class="layui-input-block">
+							<input type="text" autocomplete="off" class="layui-input">
+						</div>
+					</div>
+					<div class="layui-form-item" style="margin-top: 38px;">
+						<label class="layui-form-label"></label>
+						<div class="layui-input-block">
+							<input type="checkbox" name="remember" lay-skin="primary" title="记住我" checked="">
+							<a class="forget-pwd" href="/forget.html">忘记密码</a>
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label"></label>
+						<div class="layui-input-block">
+							<button type="button" class="layui-btn">登录</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!--底部-->
+		<div id="page_footer">
+			<ul class="footer-menu">
+				<li>帮助中心</li>
+				<li>联系我们</li>
+				<li>意见反馈</li>
+				<li>隐私声明</li>
+			</ul>
+			<div class="website-info"> Copyright © 学诗词 京ICP备13009078号-1 </div>
+		</div>
+	</body>
+	<script src="public/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

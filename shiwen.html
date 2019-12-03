@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>诗文</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		<link rel="stylesheet/less" type="text/css" href="less/public.less" />
+		<link rel="stylesheet/less" type="text/css" href="less/shiwen.less" />
+		<script src="public/less.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="public/layui/css/layui.css" />
+		<script src="public/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="page-header">
+			<div class="header-body">
+				<img src="img/public/logo.png" />
+				<img src="img/public/logo_name.png" />
+				<ul class="menu-list">
+					<li>首页</li>
+					<li class="active">诗文</li>
+					<li>名句</li>
+					<li>作者</li>
+					<li>古籍</li>
+				</ul>
+				<div class="head--search">
+					<input />
+					<button class="head-search-btn">搜索</button>
+				</div>
+				<span class="login-and-register">登录</span>
+				<span class="login-and-register">注册</span>
+			</div>
+		</div>
+		<div class="page-body">
+			<div class="body-wrapper">
+				<!--左边内容-->
+				<div class="content-wrapper">
+					<div class="class-wrapper">
+						<div class="title">不限
+							<div class="page">1/100页</div>
+						</div>
+						<div class="each-class">
+							<div class="class-name">类型：</div>
+							<div class="class-list">
+								<div>写景</div><div>咏物</div><div>春天</div><div>夏天</div>
+								<div>写景</div><div>咏物</div><div>春天</div><div>夏天</div>
+								<div>写景</div><div>咏物</div><div>春天</div><div>夏天</div>
+								<div>写景</div><div>咏物</div><div>春天</div><div>夏天</div>
+								<div>写景</div><div>咏物</div><div>春天</div><div>夏天</div>
+							</div>
+							<div class="arrow"><img src="img/public/arrow.png"/></div>
+						</div>
+						<div class="each-class">
+							<div class="class-name">作者：</div>
+							<div class="class-list">
+								<div>李白</div><div>杜甫</div><div>苏轼</div><div>王维</div>
+								<div>李白</div><div>杜甫</div><div>苏轼</div><div>王维</div>
+								<div>李白</div><div>杜甫</div><div>苏轼</div><div>王维</div>
+								<div>李白</div><div>杜甫</div><div>苏轼</div><div>王维</div>
+								<div>李白</div><div>杜甫</div><div>苏轼</div><div>王维</div>
+							</div>
+							<div class="arrow"><img src="img/public/arrow.png"/></div>
+						</div>
+						<div class="each-class">
+							<div class="class-name">朝代：</div>
+							<div class="class-list">
+								<div>先秦</div><div>两汉</div><div>五代</div><div>十国</div>
+								<div>唐代</div><div>宋代</div><div>明代</div><div>清代</div>
+								<div>先秦</div><div>两汉</div><div>五代</div><div>十国</div>
+								<div>唐代</div><div>宋代</div><div>明代</div><div>清代</div>
+								<div>先秦</div><div>两汉</div><div>五代</div><div>十国</div>
+								<div>唐代</div><div>宋代</div><div>明代</div><div>清代</div>
+							</div>
+							<div class="arrow"><img src="img/public/arrow.png"/></div>
+						</div>
+						<div class="each-class">
+							<div class="class-name">形式：</div>
+							<div class="class-list">
+								<div>诗</div><div>词</div><div>曲</div><div>散文</div>
+							</div>
+							<div class="arrow"><img src="img/public/arrow.png"/></div>
+						</div>
+					</div>
+					<!--诗词列表-->
+					<div id="song_list">
+						<!--每一首诗词-->
+						<div class="each-song">
+							<div class="title">鹊桥仙  · 七夕</div>
+							<div class="study-action">
+								<div>译</div>
+								<div class="active">注</div>
+								<div>赏</div>
+								<div>背</div>
+								<div>听</div>
+							</div>
+							<div class="info">
+								<div>宋代:范成大</div>
+								<div>类型:写景</div>
+								<div>形式:诗</div>
+							</div>
+							<div class="song-content">
+								缑山仙子，高清云渺，不学痴牛騃女。风箫声断月明中，举手谢时人欲去。客槎曾犯，银河波浪，尚带天风海雨。相逢一醉是前缘，风雨散、飘然何处？
+							</div>
+							<div class="actions">
+								<div><img src="img/public/favor.png" class="action-icon"/>23</div>
+								<div><img src="img/public/star.png" class="action-icon"/>23</div>
+								<div><img src="img/public/copy.png" class="action-icon"/></div>
+								<div><img src="img/public/code.png" class="action-icon"/></div>
+								<div class="read-btn"><button>我要朗诵</button></div>
+							</div>
+							<div class="songer">
+								<div class="songer-title">朗诵人：</div>
+								<div class="songer-name">天天朗诵天才</div>
+								<div class="more">···</div>
+							</div>
+						</div>
+						<!--每一首诗词-->
+						<div class="each-song">
+							<div class="title">鹊桥仙  · 七夕</div>
+							<div class="study-action">
+								<div>译</div>
+								<div class="active">注</div>
+								<div>赏</div>
+								<div>背</div>
+								<div>听</div>
+							</div>
+							<div class="info">
+								<div>宋代:范成大</div>
+								<div>类型:写景</div>
+								<div>形式:诗</div>
+							</div>
+							<div class="song-content">
+								缑山仙子，高清云渺，不学痴牛騃女。风箫声断月明中，举手谢时人欲去。客槎曾犯，银河波浪，尚带天风海雨。相逢一醉是前缘，风雨散、飘然何处？
+							</div>
+							<div class="actions">
+								<div><img src="img/public/favor.png" class="action-icon"/>23</div>
+								<div><img src="img/public/star.png" class="action-icon"/>23</div>
+								<div><img src="img/public/copy.png" class="action-icon"/></div>
+								<div><img src="img/public/code.png" class="action-icon"/></div>
+								<div class="read-btn"><button>我要朗诵</button></div>
+							</div>
+							<div class="songer">
+								<div class="songer-title">朗诵人：</div>
+								<div class="songer-name">天天朗诵天才</div>
+								<div class="more">···</div>
+							</div>
+						</div>
+						<!--每一首诗词-->
+						<div class="each-song">
+							<div class="title">鹊桥仙  · 七夕</div>
+							<div class="study-action">
+								<div>译</div>
+								<div class="active">注</div>
+								<div>赏</div>
+								<div>背</div>
+								<div>听</div>
+							</div>
+							<div class="info">
+								<div>宋代:范成大</div>
+								<div>类型:写景</div>
+								<div>形式:诗</div>
+							</div>
+							<div class="song-content">
+								缑山仙子，高清云渺，不学痴牛騃女。风箫声断月明中，举手谢时人欲去。客槎曾犯，银河波浪，尚带天风海雨。相逢一醉是前缘，风雨散、飘然何处？
+							</div>
+							<div class="actions">
+								<div><img src="img/public/favor.png" class="action-icon"/>23</div>
+								<div><img src="img/public/star.png" class="action-icon"/>23</div>
+								<div><img src="img/public/copy.png" class="action-icon"/></div>
+								<div><img src="img/public/code.png" class="action-icon"/></div>
+								<div class="read-btn"><button>我要朗诵</button></div>
+							</div>
+							<div class="songer">
+								<div class="songer-title">朗诵人：</div>
+								<div class="songer-name">天天朗诵天才</div>
+								<div class="more">···</div>
+							</div>
+						</div>
+						<!--每一首诗词-->
+						<div class="each-song">
+							<div class="title">鹊桥仙  · 七夕</div>
+							<div class="study-action">
+								<div>译</div>
+								<div class="active">注</div>
+								<div>赏</div>
+								<div>背</div>
+								<div>听</div>
+							</div>
+							<div class="info">
+								<div>宋代:范成大</div>
+								<div>类型:写景</div>
+								<div>形式:诗</div>
+							</div>
+							<div class="song-content">
+								缑山仙子，高清云渺，不学痴牛騃女。风箫声断月明中，举手谢时人欲去。客槎曾犯，银河波浪，尚带天风海雨。相逢一醉是前缘，风雨散、飘然何处？
+							</div>
+							<div class="actions">
+								<div><img src="img/public/favor.png" class="action-icon"/>23</div>
+								<div><img src="img/public/star.png" class="action-icon"/>23</div>
+								<div><img src="img/public/copy.png" class="action-icon"/></div>
+								<div><img src="img/public/code.png" class="action-icon"/></div>
+								<div class="read-btn"><button>我要朗诵</button></div>
+							</div>
+							<div class="songer">
+								<div class="songer-title">朗诵人：</div>
+								<div class="songer-name">天天朗诵天才</div>
+								<div class="more">···</div>
+							</div>
+						</div>
+						<!--每一首诗词-->
+						<div class="each-song">
+							<div class="title">鹊桥仙  · 七夕</div>
+							<div class="study-action">
+								<div>译</div>
+								<div class="active">注</div>
+								<div>赏</div>
+								<div>背</div>
+								<div>听</div>
+							</div>
+							<div class="info">
+								<div>宋代:范成大</div>
+								<div>类型:写景</div>
+								<div>形式:诗</div>
+							</div>
+							<div class="song-content">
+								缑山仙子，高清云渺，不学痴牛騃女。风箫声断月明中，举手谢时人欲去。客槎曾犯，银河波浪，尚带天风海雨。相逢一醉是前缘，风雨散、飘然何处？
+							</div>
+							<div class="actions">
+								<div><img src="img/public/favor.png" class="action-icon"/>23</div>
+								<div><img src="img/public/star.png" class="action-icon"/>23</div>
+								<div><img src="img/public/copy.png" class="action-icon"/></div>
+								<div><img src="img/public/code.png" class="action-icon"/></div>
+								<div class="read-btn"><button>我要朗诵</button></div>
+							</div>
+							<div class="songer">
+								<div class="songer-title">朗诵人：</div>
+								<div class="songer-name">天天朗诵天才</div>
+								<div class="more">···</div>
+							</div>
+						</div>
+					</div>
+					<!--分页-->
+					<div id="pagination"></div>
+				</div>
+				<!--右边内容-->
+				<div class="right-menu-wrapper">
+					<div class="card-wrapper">
+						<div class="title">朗诵</div>
+						<div class="each-content">
+							<div class="list">龙泉女孩爱钓鱼：13分钟前朗诵了一首 《鹊桥仙》</div>
+							<div class="list">龙泉女孩爱钓鱼：13分钟前朗诵了一首 《鹊桥仙》</div>
+							<div class="list">龙泉女孩爱钓鱼：13分钟前朗诵了一首 《鹊桥仙》</div>
+							<div class="list">龙泉女孩爱钓鱼：13分钟前朗诵了一首 《鹊桥仙》</div>
+						</div>
+					</div>
+					<div class="card-wrapper">
+						<div class="title">诗文</div>
+						<div class="each-content">
+							<div class="type-name">唐诗三百</div>
+							<div class="type-list">
+								<div class="active">五言绝句</div>
+								<div>七言绝句</div>
+								<div>五言律诗</div>
+								<div>七言律诗</div>
+								<div>五言古诗</div>
+								<div>七言古诗</div>
+								<div class="more">· · ·</div>
+							</div>
+						</div>
+						<div class="each-content">
+							<div class="type-name">唐诗三百</div>
+							<div class="type-list">
+								<div class="active">五言绝句</div>
+								<div>七言绝句</div>
+								<div>五言律诗</div>
+								<div>七言律诗</div>
+								<div>五言古诗</div>
+								<div>七言古诗</div>
+								<div class="more">· · ·</div>
+							</div>
+						</div>
+						<div class="each-content">
+							<div class="type-name">唐诗三百</div>
+							<div class="type-list">
+								<div class="active">五言绝句</div>
+								<div>七言绝句</div>
+								<div>五言律诗</div>
+								<div>七言律诗</div>
+								<div>五言古诗</div>
+								<div>七言古诗</div>
+								<div class="more">· · ·</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--底部-->
+		<div id="page_footer">
+			<ul class="footer-menu">
+				<li>帮助中心</li>
+				<li>联系我们</li>
+				<li>意见反馈</li>
+				<li>隐私声明</li>
+			</ul>
+			<div class="website-info"> Copyright © 学诗词  京ICP备13009078号-1  </div>
+		</div>
+	</body>
+	<script src="public/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/shiwen.js" type="text/javascript" charset="utf-8"></script>
+</html>
+

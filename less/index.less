@@ -1,0 +1,84 @@
+.body-wrapper {
+    .content-wrapper {
+        #tuijian {
+            .each-item {
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        .layui-carousel-ind {
+            ul {
+                float: right !important;
+                margin-right: 35px !important;
+            }
+        }
+        #poet_list {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            .each-poet {
+                width: 25%;
+                text-align: center;
+                margin-top: 30px;
+                .poet-img {
+                    width: 102px;
+                    height: 102px;
+                    border-radius: 50%;
+                }
+                .name {
+                    margin-top: 10px;
+                    color: #333333;
+                }
+                .introduction {
+                    margin-top: 4px;
+                    color: #999999;
+                }
+            }
+        }
+        #song_list {}
+    }
+    .right-menu-wrapper {
+        #login_wrapper {
+            height: 300px;
+            background-color: #fff;
+            padding-top: 60px;
+            margin-bottom: 24px;
+            background: url(../img/index/login_bg.png) no-repeat;
+            background-position: left bottom;
+            .login-type {
+                width: 152px;
+                height: 42px;
+                margin: 0 auto 10px auto;
+                background-color: #42696c;
+                color: #fff;
+                border-radius: 6px;
+                text-align: center;
+                line-height: 42px;
+                img {
+                    vertical-align: middle;
+                    font-size: 15px;
+                }
+                &:hover{
+                    cursor: pointer;
+                    opacity: 0.7;
+                }
+            }
+        }
+        #other_login_type{
+             width: 152px;
+             display: flex;
+             justify-content: space-between;
+             padding: 10px;
+             margin: 20px auto;
+             color: #42696c;
+             div{
+                 &:hover{
+                     opacity: 0.7;
+                     cursor: pointer;
+                 }
+             }
+        }
+    }
+}

@@ -1,0 +1,563 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "微软雅黑";
+}
+
+body {
+    background: url(../img/public/bg.png) no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+.page-header {
+    width: 100%;
+    min-width: 1000px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .05);
+    .header-body {
+        width: 1000px;
+        margin: auto;
+        padding: 12px 0;
+        .menu-list {
+            width: 380px;
+            overflow: hidden;
+            display: inline-block;
+            margin-left: 62px;
+            transform: translateY(10px);
+            li {
+                float: left;
+                padding: 5px 20px;
+                list-style: none;
+                &.active {
+                    background: url(../img/public/menu_bg.png) center no-repeat;
+                    color: #fff;
+                }
+                &:hover {
+                    opacity: 0.7;
+                    cursor: pointer;
+                }
+            }
+        }
+        .head--search {
+            display: inline-block;
+            border: 3px solid #f5f4f2;
+            margin-right: 20px;
+            input {
+                width: 230px;
+                height: 35px;
+                border: none;
+                padding: 5px;
+            }
+            .head-search-btn {
+                width: 60px;
+                height: 36px;
+                color: #fff;
+                background-color: #42696c;
+                border: none;
+                cursor: pointer;
+                margin-left: -6px;
+            }
+        }
+        .login-and-register {
+            color: #42696c;
+            display: inline-block;
+            margin-left: 15px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+    }
+}
+
+.page-body {
+    width: 100%;
+    padding-top: 58px;
+    .body-wrapper {
+        display: flex;
+        width: 1000px;
+        margin: auto;
+        .content-wrapper {
+            width: 658px;
+            margin-right: 30px;
+        }
+        .right-menu-wrapper {
+            width: 312px;
+        }
+    }
+}
+
+//每一篇诗词
+#song_list {
+    .each-song {
+        margin-top: 20px;
+        background-color: #fff;
+        padding: 20px 20px 20px 24px;
+        position: relative;
+        .title {
+            color: #42696c;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .study-action {
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            display: flex;
+            width: 240px;
+            justify-content: space-between;
+            color: #fff;
+            font-size: 15px;
+            div {
+                width: 38px;
+                height: 38px;
+                text-align: center;
+                line-height: 32px;
+                cursor: pointer;
+                background: url(../img/public/action.png) center no-repeat;
+                &.active {
+                    background: url(../img/public/action_h.png) center no-repeat;
+                }
+            }
+        }
+        .info {
+            margin: 10px 0 15px 0;
+            display: flex;
+            color: #999;
+            div {
+                margin-right: 42px;
+                font-size: 13px;
+            }
+        }
+        .song-content {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .actions {
+            display: flex;
+            padding: 5px 0;
+            div {
+                margin-right: 20px;
+                color: #999;
+                font-size: 12px;
+                .action-icon {
+                    margin-right: 10px;
+                    vertical-align: middle;
+                    cursor: pointer;
+                }
+            }
+            .read-btn {
+                flex-grow: 1;
+                text-align: right;
+                button {
+                    border: 1px solid #eaeaea;
+                    color: #333;
+                    background-color: #fff;
+                    border-radius: 2px;
+                    width: 70px;
+                    height: 26px;
+                    cursor: pointer;
+                    transform: translateY(-6px);
+                }
+            }
+        }
+        .songer {
+            padding-top: 15px;
+            border-top: 1px solid #eaeaea;
+            font-size: 13px;
+            display: flex;
+            .songer-title {
+                color: #999;
+                margin-right: 10px;
+            }
+            .songer-name {
+                color: #333;
+                margin-right: 15px;
+            }
+            .more {
+                color: #42696c;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+#page_footer {
+    margin-top: 60px;
+    height: 124px;
+    text-align: center;
+    padding-top: 40px;
+    .footer-menu {
+        margin: auto;
+        overflow: hidden;
+        width: 320px;
+        li {
+            float: left;
+            list-style: none;
+            color: #42696c;
+            padding: 2px 10px;
+            &:hover {
+                cursor: pointer;
+                opacity: 0.7;
+            }
+        }
+    }
+    .website-info {
+        color: #999999;
+    }
+}
+
+//右侧卡片
+.card-wrapper {
+    padding: 10px;
+    background-color: #fff;
+    margin-bottom: 24px;
+    .title {
+        color: #42696c;
+        font-size: 18px;
+        height: 46px;
+        font-weight: bold;
+        background: url(../img/public/card_bg.png) no-repeat center;
+        background-position: 60px -24px;
+    }
+    .each-content {
+        margin-bottom: 20px;
+        .type-name {
+            color: #333;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        .type-list {
+            display: flex;
+            flex-wrap: wrap;
+            div {
+                color: #42696c;
+                margin: 10px 12px 0 0;
+                padding: 2px;
+                font-size: 12px;
+                border-radius: 3px;
+                &.active {
+                    background-color: #42696c;
+                    color: #fff;
+                }
+                &.more {
+                    font-weight: bold;
+                }
+                &:hover {
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+            }
+        }
+        .list {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+            border-bottom: 1px solid #eaeaea;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+            padding-right: 12px;
+            font-size: 15px;
+            &:last-child {
+                border-bottom: none;
+                margin-bottom: 0;
+            }
+            &:hover {
+                color: #42696c;
+                cursor: pointer;
+            }
+        }
+    }
+    .xinde-wrapper{
+        padding-bottom: 12px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #eaeaea;
+        .xinde-input{
+            width: 100%;
+            resize: none;
+            padding: 10px;
+        }
+        .submit-reset{
+            text-align: center;
+            button{
+                border: none;
+                width: 84px;
+                height: 34px;
+                margin: 10px 6px;
+                border-radius: 4px;
+                &:hover{
+                    cursor: pointer;
+                    opacity: 0.8;
+                    text-decoration: underline;
+                }
+            }
+            .submit-btn{
+                color: #fff;
+                background-color: #42696c;
+            }
+            .reset-btn{
+                background-color: #eaeaea;
+            }
+        }
+    }
+}
+
+//诗文名句展开收起的头部
+.class-wrapper {
+    background-color: #fff;
+    padding: 20px 12px;
+    .title {
+        font-size: 18px;
+        padding-bottom: 6px;
+        border-bottom: 1px solid #eaeaea;
+        .page {
+            float: right;
+            color: #999;
+            font-size: 14px;
+            margin-right: 10px;
+        }
+    }
+    .each-class {
+        border-bottom: 1px dashed #eaeaea;
+        display: flex;
+        padding: 15px 10px 0 0;
+        &:last-child {
+            border-bottom: none;
+        }
+        .class-name {
+            color: #42696c;
+            width: 50px;
+            flex-shrink: 0;
+        }
+        .arrow {
+            width: 12px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .class-list {
+            display: flex;
+            flex-grow: 1;
+            flex-wrap: wrap;
+            height: 30px;
+            overflow: hidden;
+            div {
+                margin: 0 18px 15px 0;
+                &:hover {
+                    opacity: 0.7;
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+            }
+        }
+        &.active {
+            .class-list {
+                height: auto;
+                overflow: visible;
+            }
+            .arrow {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+//分页
+.layui-laypage-skip {
+    background-color: transparent !important;
+}
+
+#pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+//广告
+#advertisement {
+    margin-top: 24px;
+    img {
+        width: 100%;
+    }
+}
+
+//作者
+#poet_list_wrapper {
+    .each-poet {
+        background-color: #fff;
+        padding: 20px 20px 20px 24px;
+        margin-bottom: 20px;
+        position: relative;
+        .study-action {
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            color: #fff;
+            font-size: 15px;
+            div {
+                width: 38px;
+                height: 38px;
+                text-align: center;
+                line-height: 32px;
+                cursor: pointer;
+                background: url(../img/public/action.png) center no-repeat;
+                &.active {
+                    background: url(../img/public/action_h.png) center no-repeat;
+                }
+            }
+        }
+        .poet-info {
+            overflow: hidden;
+            img {
+                float: left;
+                margin-right: 16px;
+            }
+            .poet-name {
+                color: #42696c;
+                font-size: 20px;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+            .poet-detail {
+                color: #333;
+                line-height: 24px;
+                .works {
+                    margin-left: 10px;
+                    color: #42696c;
+                    &:hover {
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .actions {
+            display: flex;
+            margin-top: 20px;
+            div {
+                margin-right: 20px;
+                color: #999;
+                font-size: 12px;
+                .action-icon {
+                    margin-right: 10px;
+                    vertical-align: middle;
+                    cursor: pointer;
+                }
+            }
+            .read-btn {
+                flex-grow: 1;
+                text-align: right;
+                button {
+                    border: 1px solid #eaeaea;
+                    color: #333;
+                    background-color: #fff;
+                    border-radius: 2px;
+                    width: 70px;
+                    height: 26px;
+                    cursor: pointer;
+                    transform: translateY(-6px);
+                }
+            }
+        }
+    }
+}
+
+//详情
+.song-detail-wrapper {
+    padding: 20px;
+    background-color: #fff;
+    position: relative;
+    margin-top: 24px;
+    &:first-child{
+        margin-top: 0;
+    }
+    .action {
+        position: absolute;
+        color: #fff;
+        right: 15px;
+        top: 20px;
+        width: 38px;
+        height: 38px;
+        text-align: center;
+        line-height: 32px;
+        cursor: pointer;
+        background: url(../img/public/action.png) center no-repeat;
+    }
+    .title {
+        color: #42696c;
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .pre-info {
+        color: #999;
+        font-size: 12px;
+        margin: 5px 0;
+    }
+    .song-text {
+        margin-bottom: 20px;
+    }
+    .action-btns {
+        text-align: right;
+        margin-bottom:10px;
+        margin-top: 10px;
+        button {
+            width: 68px;
+            height: 26px;
+            background-color: #fff;
+            border: 1px solid #eaeaea;
+            margin-left: 12px;
+        }
+    }
+    .songer {
+        padding-top: 15px;
+        border-top: 1px solid #eaeaea;
+        font-size: 13px;
+        display: flex;
+        .songer-title {
+            color: #999;
+            margin-right: 10px;
+        }
+        .songer-name {
+            color: #333;
+            margin-right: 15px;
+        }
+        .more {
+            color: #42696c;
+            font-weight: bold;
+        }
+    }
+    .control-wrapper{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        color: #42696c;
+        background: -webkit-linear-gradient(top, transparent,#fff 50%,#fff 100%);
+        cursor: pointer;
+        &:hover{
+            text-decoration: underline;
+        }
+        .hide{
+               display: block;
+            }
+        .show{
+            display: none;
+        }
+    }
+    &.active{
+        height: 600px;   
+        overflow: hidden;
+        .control-wrapper{
+            .hide{
+                display: none;
+            }
+            .show{
+                display: block;
+            }
+        }
+    }
+}
